@@ -26,7 +26,7 @@ Algorithmen zur Bildkomprimierung können sich spürbar auf die Bildqualität au
 
 ## 2. Experimentelles Design
 
-Wir haben ein Bild genommen (*Einsteins* Porträt) und 7 Stufen der JPG-Kompression angewendet. Konkret haben wir das Einstein-Bild mit sieben verschiedenen *Qualitäts*-Parameterwerten (0, 5, 10, 20, 40, 60, 80) unter Verwendung der *Pillow*-Bildbibliothek für Python gespeichert (der Qualitätsparameter reicht von 0 bis 100). Wir haben auch das ursprüngliche, unveränderte *Einstein*-Bild (Qualität gleich 100) beigefügt. 
+Wir haben ein Bild genommen (*Einsteins* Porträt) und 7 Stufen der JPG-Kompression angewendet. Konkret haben wir das Einstein-Bild mit sieben verschiedenen *Qualitäts*-Parameterwerten (0, 5, 10, 20, 40, 60, 80) unter Verwendung der *PIL*-Bibliothek für Python gespeichert (der Qualitätsparameter reicht von 0 bis 100). Wir haben auch das ursprüngliche, unveränderte *Einstein*-Bild (Qualität gleich 100) beigefügt. 
 
 Zur besseren Veranschaulichung der Bildmanipulation haben wir die JPEG-Qualitätswerte in *Verzerrungswerte* umgerechnet, definiert als *Verzerrung = (100 - Qualität)*. Die folgende Abbildung zeigt den kompletten Satz der im Experiment verwendeten Stimuli.
 
@@ -42,7 +42,7 @@ for i, q in enumerate(quality):
     plt.subplot(2, 4, i+1)
     plt.imshow(im, cmap='gray', vmin=0, vmax=255); 
     plt.axis('off')
-    plt.title('degradation = %d' % (100-q))
+    plt.title('Verzerrung = %d' % (100-q))
     
 ```
 
@@ -76,18 +76,18 @@ plt.figure(figsize=(10,4))
 
 plt.subplot(1,2,1)
 plt.plot(degradation, scale_ga, 'o', label='GA')
-plt.ylabel('Perceptual scale')
-plt.xlabel('Degradation')
+plt.ylabel('Skala')
+plt.xlabel('Verzerrung')
 plt.ylim(-0.1, 1.05)
-plt.title('Observer GA')
+plt.title('Beobachter GA')
 sns.despine()
 
 ax = plt.subplot(1,2,2)
 plt.plot(degradation, scale_im, 'o', label='IM')
-plt.xlabel('Degradation')
+plt.xlabel('Verzerrung')
 plt.ylim(-0.1, 1.05)
 ax.set_yticklabels([])
-plt.title('Observer IM')
+plt.title('Beobachter IM')
 sns.despine()
 
 ```
