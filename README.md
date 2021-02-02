@@ -21,7 +21,7 @@ Zur besseren Veranschaulichung der Bildmanipulation haben wir die JPEG-Qualität
 ![png](output_4_0.png)
 
 
-Wir habe Wahrnehmungsskalen mittels MLDS mit der Methode der Triaden gemessen. Insgesamt gab es ${8 \choose 3}= 56$ mögliche Triadenkombinationen, die wir $n=5$ mal wiederholten, was insgesamt 280 Versuche pro Beobachter ergab.
+Wir habe Wahrnehmungsskalen mittels MLDS mit der Methode der Triaden gemessen. Insgesamt gab es comb(8, 3) = 56 mögliche Triadenkombinationen, die wir n=5 mal wiederholten, was insgesamt 280 Versuche pro Beobachter ergab.
 
 ## 3. Ergebnisse
 
