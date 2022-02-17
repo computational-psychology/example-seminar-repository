@@ -65,7 +65,7 @@ for i, q in enumerate(quality):
 ![png](output_4_1.png)
 
 
-Wir haben Wahrnehmungsskalen mittels MLDS mit der Methode der Triaden gemessen. Da wir 8 Komprimierungsstufen verwendet haben, ergaben sich insgesamt ${8 \choose 3}= 56$ mögliche Triadenkombinationen, die wir $5$ mal wiederholt haben. Daraus ergeben sich insgesamt 280 Durchgänge pro Beobachter und Bild und 560 Durchgänge für beide Bilder. Wir haben 2 Beobachter getestet. Das Experiment hat ingesamt 1 Stunde gedauert, die Beobachter konnten zwischendurch Pausen machen.  
+Wir haben Wahrnehmungsskalen mittels MLDS mit der Methode der Triaden gemessen. Da wir 8 Komprimierungsstufen verwendet haben, ergaben sich insgesamt *binom(8,3)= 56* mögliche Triadenkombinationen, die wir 5 mal wiederholt haben. Daraus ergeben sich insgesamt 280 Durchgänge pro Beobachter und Bild und 560 Durchgänge für beide Bilder. Wir haben 2 Beobachter getestet. Das Experiment hat ingesamt 1 Stunde gedauert, die Beobachter konnten zwischendurch Pausen machen.  
 
 ## 3. Ergebnisse
 
